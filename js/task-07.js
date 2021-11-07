@@ -1,11 +1,11 @@
-const textFontSize = document.querySelector('#text');
+const textFontSizeEl = document.querySelector('#text');
 
-const textFontInput = document.querySelector('#font-size-control');
+const textFontInputEl = document.querySelector('#font-size-control');
 
-textFontSize.style.fontSize = textFontInput.value + 'px';
+textFontSizeEl.style.fontSize = textFontInputEl.value + 'px';
 
-textFontInput.addEventListener('input', onInputChange);
+textFontInputEl.addEventListener('input', onInputChange);
 
 function onInputChange(event) {
-    textFontSize.style.fontSize = event.currentTarget.value + 'px';
+    textFontSizeEl.style.fontSize = event.currentTarget.value + 'px';
 }
