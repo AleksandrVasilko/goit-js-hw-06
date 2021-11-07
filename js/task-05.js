@@ -10,4 +10,3 @@ function onInputChange(event) {
         output.textContent = 'Anonymous';
     }
 }
-
