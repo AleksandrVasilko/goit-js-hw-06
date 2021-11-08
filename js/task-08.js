@@ -17,9 +17,13 @@ function onFormSubmit(event) {
 
         const formData = new FormData(event.currentTarget)
 
+        const data = {}
+        
         formData.forEach((value, name) => {
-            console.log(name, value)
+            data[name] = value;
         });
+        
+        console.log('data', data)
         
         form.reset();
     }
