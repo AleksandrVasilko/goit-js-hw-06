@@ -10,11 +10,9 @@ const colorValueEl = document.querySelector('.color');
 
 const bodyEl = document.querySelector('body');
 
-colorButtonEl.addEventListener('click', onChangeColor);
+document.addEventListener("DOMContentLoaded", onChangeColor); 
 
-const colorSet = getRandomHexColor();
-  bodyEl.style.background = colorSet;
-  colorValueEl.textContent = colorSet;
+colorButtonEl.addEventListener('click', onChangeColor);
 
 function onChangeColor() {
   const colorSet = getRandomHexColor();
